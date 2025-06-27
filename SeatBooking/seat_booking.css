@@ -1,0 +1,40 @@
+/* styles the seat's container */
+.seating-chart {
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    gap: 10px;
+    justify-content: center;
+}
+
+/* styles individual seats */
+.seat {
+    width: 70px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #ccc; /* white */
+    cursor: pointer;
+}
+
+/* styles the booked seats */
+.booked {
+    background-color: #FF0000; /* red */
+    cursor: not-allowed;
+    color: white;
+}
+
+.available {
+    background-color: #7FFF00; /* light green */
+}
+
+/* styles the select random seat button */
+.select-button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #007BFF; /* blue */
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
